@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>RFP Tracker</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">RFP Tracker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="admin-dashboard.html">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Settings</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Change Password</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log Out</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mb-5 mt-5">
+        <div class="container">
+            <!-- <h1>Heading 1</h1> -->
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>New RFP</h2>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-4">
+                    <form action="#" method="get">
+                        <div class="form-group">
+                            <label class="col-form-label mt-4" for="inputDefault">Name of Donor</label>
+                            <input type="text" class="form-control" placeholder="Name of Donor" id="inputDefault">
+                        </div>
+                        <div class="form-group">
+                            <label for="formFile" class="form-label mt-4">Attach file</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                        <div class="form-group">
+                            <label for="formDate" class="form-label mt-4">Expected completion date</label>
+                            <input class="form-control" type="date" id="formDate">
+                        </div>
+                        <div class="form_cta mb-3 mt-3">
+                            <a href="admin-dashboard-2.html" class="btn btn-primary">Add new RFP</a>
+                            <a href="#" class="btn btn-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="bootstrap.min.js"></script>
+</body>
+
+</html>
